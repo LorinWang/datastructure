@@ -1,3 +1,8 @@
+/**
+ * 线性表在插入时需要判断容量，容量不够时调用Arrays.copyOf(T[] original,int newLength)来构建新的数组
+ * 在插入删除时还要调用System.arraycopy(Object src,int srcPos,Object dest,int destPos,int length)来挪数组元素位置
+ * 
+ */
 import java.util.Arrays;
 
 public class SequenceList<T>
