@@ -31,10 +31,7 @@ public class BinaryInsertSort
 					high=mid-1;
 				}
 			}
-			for (int j=i;j>low;j--)
-			{
-				data[j]=data[j-1];
-			}
+			System.arraycopy(data, low, data, low + 1, i - low);
 			data[low]=tmp;
 		}
 	}
